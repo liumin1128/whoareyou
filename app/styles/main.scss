@@ -1,0 +1,184 @@
+$icon-font-path: '../fonts/';
+// bower:scss
+@import "bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
+// endbower
+html {
+  font-size: 18px;
+}
+
+body {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background: url('../images/bg@1x.png');
+  background-size: 3px 1.5rem;
+}
+
+/* Custom page footer */
+
+.inputBox {
+  background: url('../images/imputBg@1x.png') no-repeat;
+  background-size: 100% 100%;
+  margin-top: 50px;
+  width: 70%;
+  height: 60px;
+  .nameInput {
+    border: none;
+    width: 100%;
+    height: 100%;
+    background: none;
+    color: #000;
+    font-size: 30px;
+    padding: 0 30px;
+    text-align: center;
+  }
+}
+
+.btn-go {
+  border: none;
+}
+
+.imagesBox {
+  width: 100%;
+  position: relative;
+  padding-bottom: 20%;
+  .Rect2 {
+    width: 100%;
+    padding-left: 20%;
+    padding-top: 10%;
+  }
+  .Rect1 {
+    position: absolute;
+    width: 60%;
+    left: 0;
+    bottom: 0;
+  }
+  .zcj {
+    position: absolute;
+    width: 30%;
+    top: 30%;
+    left: 25px;
+    // animation-duration: 3s;
+    animation-delay: 1s;
+    // animation-iteration-count: infinite;
+  }
+  .qs {
+    width: 20%;
+    animation-delay: 2s;
+    position: absolute;
+    bottom: 0;
+    right: 30%;
+  }
+  .role {
+    position: absolute;
+    top: 0%;
+    height: 74%;
+    right: 10%;
+  }
+  .wh {
+    position: absolute;
+    height: 10%;
+    top: 8%;
+    right: 15%;
+    animation-delay: 3s;
+  }
+  .jth {
+    position: absolute;
+    height: 10%;
+    top: 15%;
+    right: 7%;
+    animation-delay: 3.5s;
+    
+  }
+  .Oval {
+    position: absolute;
+    height: 5%;
+    bottom: 5%;
+    right: 17%;
+  }
+}
+
+.container,body {
+  padding: 0;
+}
+
+.result {
+  background: #f3f3f3;
+  display: none;
+  h1, p, br {
+    height: 1.7rem;
+    border-bottom: 1px #fdc4c2 solid;
+    padding: 0 .7rem;
+  }
+  .title, .strong {
+    font-weight: bold;
+    // border-top: 1px #fdc4c2 solid;
+    margin: 0;
+    font-size: 1.3rem;
+    line-height: 2rem;
+  }
+  p{
+    vertical-align: bottom;
+    // border: 1px #333 solid;
+    margin: 0;
+    font-size: 1rem;
+    // font-size: 20px;
+    line-height: 2.2rem;
+  }
+  .one {
+    color: red;
+  }
+}
+.title.username {
+  height: 1.7rem;
+  border-bottom: 1px #fdc4c2 solid;
+  background: #f3f3f3;
+  padding: 0 .7rem;
+  font-weight: bold;
+  // border-top: 1px #fdc4c2 solid;
+  margin: 0;
+  font-size: 1.3rem;
+  line-height: 2rem;
+}
+.index {
+  padding: 20px;
+}
+
+.btn-go {
+  width: 30%;
+  float: right;
+}
+
+.foot {
+  width: 100%;
+  margin-top: 100px;
+}
+
+.buttonBox {
+  margin: 2.5rem 0 1.5rem;
+  display: flex;
+  justify-content: space-around;
+  img {
+    width: 4rem;
+    height: 4rem;
+  }
+}
+.innerBox {
+  padding: 0.5rem;
+}
+.footer {
+  width: 100%;
+  border: 2px #000 solid;
+  background: #FFF033;
+  height: 6.2rem;
+  padding: 0.5rem;
+  padding-left: 6rem;
+  position: relative;
+  .qr {
+    position: absolute;
+    width: 5rem;
+    left: 0.5rem;
+  }
+  h3 {
+    margin-top: 0.5rem;
+  }
+}
