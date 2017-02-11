@@ -99,4 +99,14 @@
       e=o.createElement(i);r=o.getElementsByTagName(i)[0];
       e.src='https://www.google-analytics.com/analytics.js';
       r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
-      ga('create','UA-XXXXX-X');ga('send','pageview');</script><script src="scripts/vendor.js"></script><script src="scripts/plugins.js"></script><script src="scripts/main.js"></script></body></html>
+      ga('create','UA-XXXXX-X');ga('send','pageview');</script><script src="scripts/vendor.js"></script><script src="scripts/plugins.js"></script><script src="scripts/main.js"></script><script>$(function(){
+        $('#loading').hide()
+        $('.btn-go').click(function(){
+          var story = Math.floor(Math.random()*6) + 1
+          var stroryArray = ['梦露', '罗斯福', '克林顿', '邓文迪', '川普', '奥巴马', '王宝强']
+          console.log('随机生成了一个字符串：' + story);
+          var u = encodeURI(encodeURI('刘敏'))
+          var s = encodeURI(encodeURI(stroryArray[story]))
+          window.location.href = 'result.html?username=' + u + '&storyname=' + s
+        })
+      });</script></body></html>
