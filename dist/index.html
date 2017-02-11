@@ -119,12 +119,17 @@
           var username = $("#nameinput").val()
           console.log(username)
           if (username != null && username.toString().length>0) {
-            var story = Math.floor(Math.random()*6) + 1
-            var stroryArray = ['梦露', '罗斯福', '克林顿', '邓文迪', '川普', '奥巴马', '王宝强']
-            console.log('随机生成了一个字符串：' + story);
-            var u = encodeURI(encodeURI(username))
-            var s = encodeURI(encodeURI(stroryArray[story]))
-            window.location.href = 'result.html?username=' + u + '&storyname=' + s
+            if (username.toString().length>1) {
+              var story = Math.floor(Math.random()*6) + 1
+              var stroryArray = ['梦露', '罗斯福', '克林顿', '邓文迪', '川普', '奥巴马', '王宝强']
+              console.log('随机生成了一个字符串：' + story);
+              var u = encodeURI(encodeURI(username))
+              var s = encodeURI(encodeURI(stroryArray[story]))
+              window.location.href = 'result.html?username=' + u + '&storyname=' + s
+            } else {
+              $('#myModalLabel').text('请至少输入两个字符！')
+              $('#myModal').modal('show')
+            }
           } else {
             $('#myModalLabel').text('用户名不能为空！')
             $('#myModal').modal('show')
