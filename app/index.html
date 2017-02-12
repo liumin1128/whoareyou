@@ -138,23 +138,23 @@
     <div class="container">
       <div class="index">
         <div class='imagesBox'>
-          <img src="images/Rect1@1x.jpg" srcset="images/Rect1@1x.jpg 128w, images/Rect1@2x.jpg 256w, images/Rect1@3x.jpg 512w" sizes="(max-width: 360px) calc(100vw - 20px), 128px" class="Rect1 animated fadeInLeft img-responsive" alt="Responsive image">
-          <img src="images/Rect2@1x.jpg" srcset="images/Rect2@1x.jpg 128w, images/Rect2@2x.jpg 256w, images/Rect2@3x.jpg 512w" sizes="(max-width: 360px) calc(100vw - 20px), 128px" class="Rect2 animated fadeInRight img-responsive" alt="Responsive image">
-          <img src="images/role1@1x.png" srcset="images/role1@1x.png 128w, images/role1@2x.png 256w, images/role1@3x.png 512w" sizes="(max-width: 360px) calc(100vw - 20px), 128px" class="role animated zoomIn img-responsive" alt="Responsive image">
-          <img src="images/zcj@1x.png" srcset="images/zcj@1x.png 128w, images/zcj@2x.png 256w, images/zcj@3x.png 512w" sizes="(max-width: 360px) calc(100vw - 20px), 128px" class="zcj animated tada img-responsive" alt="Responsive image">
-          <img src="images/qs@1x.png" srcset="images/qs@1x.png 128w, images/qs@2x.png 256w, images/qs@3x.png 512w" sizes="(max-width: 360px) calc(100vw - 20px), 128px" class="qs animated rubberBand img-responsive" alt="Responsive image">
-          <img src="images/wh@1x.png" srcset="images/wh@1x.png 128w, images/wh@2x.png 256w, images/wh@3x.png 512w" sizes="(max-width: 360px) calc(100vw - 20px), 128px" class="wh animated bounce infinite img-responsive" alt="Responsive image">
-          <img src="images/jth@1x.png" srcset="images/jth@1x.png 128w, images/jth@2x.png 256w, images/jth@3x.png 512w" sizes="(max-width: 360px) calc(100vw - 20px), 128px" class="jth animated wobble infinite img-responsive" alt="Responsive image">
-          <img src="images/Oval@1x.png" srcset="images/Oval@1x.png 128w, images/Oval@2x.png 256w, images/Oval@3x.png 512w" sizes="(max-width: 360px) calc(100vw - 20px), 128px" class="Oval animated zoomIn img-responsive" alt="Responsive image">
+          <img src="images/Rect1@1x.jpg" srcset="images/Rect1@1x.jpg 128w, images/Rect1@2x.jpg 256w, images/Rect1@3x.jpg 512w" sizes="(max-width: 360px) calc(100vw - 20px), 128px" class="Rect1 animatewait fadeInLeft img-responsive" alt="Responsive image">
+          <img src="images/Rect2@1x.jpg" srcset="images/Rect2@1x.jpg 128w, images/Rect2@2x.jpg 256w, images/Rect2@3x.jpg 512w" sizes="(max-width: 360px) calc(100vw - 20px), 128px" class="Rect2 animatewait fadeInRight img-responsive" alt="Responsive image">
+          <img src="images/role1@1x.png" srcset="images/role1@1x.png 128w, images/role1@2x.png 256w, images/role1@3x.png 512w" sizes="(max-width: 360px) calc(100vw - 20px), 128px" class="role animatewait zoomIn img-responsive" alt="Responsive image">
+          <img src="images/zcj@1x.png" srcset="images/zcj@1x.png 128w, images/zcj@2x.png 256w, images/zcj@3x.png 512w" sizes="(max-width: 360px) calc(100vw - 20px), 128px" class="zcj animatewait tada img-responsive" alt="Responsive image">
+          <img src="images/qs@1x.png" srcset="images/qs@1x.png 128w, images/qs@2x.png 256w, images/qs@3x.png 512w" sizes="(max-width: 360px) calc(100vw - 20px), 128px" class="qs animatewait rubberBand img-responsive" alt="Responsive image">
+          <img src="images/wh@1x.png" srcset="images/wh@1x.png 128w, images/wh@2x.png 256w, images/wh@3x.png 512w" sizes="(max-width: 360px) calc(100vw - 20px), 128px" class="wh animatewait bounce infinite img-responsive" alt="Responsive image">
+          <img src="images/jth@1x.png" srcset="images/jth@1x.png 128w, images/jth@2x.png 256w, images/jth@3x.png 512w" sizes="(max-width: 360px) calc(100vw - 20px), 128px" class="jth animatewait wobble infinite img-responsive" alt="Responsive image">
+          <img src="images/Oval@1x.png" srcset="images/Oval@1x.png 128w, images/Oval@2x.png 256w, images/Oval@3x.png 512w" sizes="(max-width: 360px) calc(100vw - 20px), 128px" class="Oval animatewait zoomIn img-responsive" alt="Responsive image">
         </div>
-        <div class="inputBox animated zoomIn">
-          <input class='nameInput' type="text" name="" placeholder="你的名字" value="">
+        <div class="inputBox animatewait zoomIn">
+          <input id="nameinput" class='nameInput' type="text" name="" placeholder="你的名字" value="">
         </div>
         <img 
           src="images/go@1x.png"
           srcset="images/go@1x.png 128w, images/go@2x.png 256w, images/go@3x.png 512w"
           sizes="(max-width: 360px) calc(100vw - 20px), 128px"
-          class="animated zoomIn img-responsive btn-go"
+          class="animatewait zoomIn img-responsive btn-go"
           alt="Go"
         />
         <img 
@@ -165,6 +165,19 @@
           alt="Go"
         />
       </div>
+
+      <!-- Modal -->
+      <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+              <h4 class="modal-title" id="myModalLabel"></h4>
+            </div>
+          </div>
+        </div>
+      </div>
+
     </div>
     
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
@@ -174,7 +187,7 @@
       e=o.createElement(i);r=o.getElementsByTagName(i)[0];
       e.src='https://www.google-analytics.com/analytics.js';
       r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
-      ga('create','UA-XXXXX-X');ga('send','pageview');
+      ga('create','UA-91762675-1');ga('send','pageview');
     </script>
 
     <!-- build:js scripts/vendor.js -->
@@ -201,19 +214,45 @@
     
     <!-- build:js scripts/main.js -->
     <script src="scripts/main.js"></script>
+    <!-- endbuild -->
     <script>
       $(function(){
+        $.fn.extend({
+            animateCss: function (animationName) {
+                var animationEnd = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
+                this.addClass('animated ' + animationName).one(animationEnd, function() {
+                    $(this).removeClass('animated ' + animationName);
+                });
+            }
+        });
         $('#loading').hide()
+        $('.animatewait').addClass('animated')
+
         $('.btn-go').click(function(){
-          var story = Math.floor(Math.random()*6) + 1
-          var stroryArray = ['梦露', '罗斯福', '克林顿', '邓文迪', '川普', '奥巴马', '王宝强']
-          console.log('随机生成了一个字符串：' + story);
-          var u = encodeURI(encodeURI('刘敏'))
-          var s = encodeURI(encodeURI(stroryArray[story]))
-          window.location.href = 'result.html?username=' + u + '&storyname=' + s
+          $('.btn-go').attr('class', 'img-responsive btn-go')
+          // $('.btn-go').removeClass('animated zoomIn tada ')
+          $('.btn-go').animateCss('tada')
+
+          var username = $("#nameinput").val()
+          console.log(username)
+          if (username != null && username.toString().length>0) {
+            if (username.toString().length>1) {
+              var story = Math.floor(Math.random()*6) + 1
+              var stroryArray = ['梦露', '罗斯福', '克林顿', '邓文迪', '川普', '奥巴马', '王宝强']
+              console.log('随机生成了一个字符串：' + story);
+              var u = encodeURI(encodeURI(username))
+              var s = encodeURI(encodeURI(stroryArray[story]))
+              window.location.href = 'result.html?username=' + u + '&storyname=' + s
+            } else {
+              $('#myModalLabel').text('请至少输入两个字符！')
+              $('#myModal').modal('show')
+            }
+          } else {
+            $('#myModalLabel').text('用户名不能为空！')
+            $('#myModal').modal('show')
+          }
         })
       });  
     </script>
-    <!-- endbuild -->
   </body>
 </html>
